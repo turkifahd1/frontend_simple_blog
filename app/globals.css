@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,32 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+.input-field {
+  transition: all 0.3s ease; /* تجعل الانتقال ناعمًا */
+}
+.input-field:focus {
+  transform: scale(1.1); /* تكبير الحجم عند التركيز (عند النقر) */
+}
+.black-text {
+  color: rgb(247, 244, 244); /* تغيير لون النص إلى الأسود */
+}
+
+
+.button {
+  transition: all 0.3s ease; /* تجعل الانتقال ناعمًا */
+}
+.button:hover {
+  transform: scale(1.1); /* تكبير الحجم عند تحويل المؤشر */
+}
+.button:focus {
+  transform: scale(1.1); /* تكبير الحجم عند التركيز (عند النقر) */
+}
+.button:active {
+  transform: scale(0.9); /* تصغير الحجم عند النقر */
+}
+.black-text {
+  color: black; /* تغيير لون النص إلى الأسود */
 }
